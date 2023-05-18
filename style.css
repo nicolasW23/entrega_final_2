@@ -1,0 +1,105 @@
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+}
+
+#wrapper{
+    /* display: grid; */
+    text-align: center;
+    /* grid-template-columns: repeat(4,25%); */
+    background-color:lightgray;
+
+}
+
+.imagen {
+    /* width: 185px;*/
+    height: 250px; 
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+.row {
+    --bs-gutter-x: 0rem;
+}
+
+.carritoDOM{
+  width: 400px;
+}
+
+#sidebar{
+  position:absolute;
+  z-index: 1;
+  width: 380px;
+  height: auto;
+  margin-top: 0;
+  background: #151719;
+  display: none;
+  transition: all 500ms;
+}
+
+#sidebar.active{
+  right: 0;
+}
+
+#sidebar ul li{
+  color: rgb(230, 230, 230, .9);
+  text-align: center;
+  padding: 15px 10px;
+  border-bottom: 1px solid rgba(100, 100, 100, .3);
+}
+
+/* .toggle-btn{
+  position: absolute;
+  right: 400px;
+  top: 20px;
+  cursor: pointer;
+  background-color: aliceblue;
+}
+
+.toggle-btn span{
+  display: block;
+  width: 40px;
+  text-align: center;
+  font-size: 30px;
+  border: 1px solid;
+} */
+
+#sidebar span {
+  cursor: pointer;
+  width: 34px;
+  height: 24px;
+  text-align: center;
+  background-color: red;
+}
+
+
+.contenedor_registro{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(147, 141, 141);
+  height: 200px;
+  width: 250px;
+  margin-top: 50px;
+}
+
+button {
+   margin: auto;  
+   text-align: center;
+
+}
+
+@media (max-width: 600px){
+    #contenedorProductos{
+      grid-template-columns: repeat(2,48%);
+      }
+}
+
+/*Inicio de @media 540 */
+@media (max-width: 540px){
+#contenedorProductos{
+  grid-template-columns: repeat(2,48%);
+  }
+}
+
+
